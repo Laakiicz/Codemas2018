@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Zachraň vánoce</title>
+    <link href="https://fonts.googleapis.com/css?family=Bevan|Press+Start+2P&amp;subset=latin-ext" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <header>
+      <div>
+        <img src="obrazky/darek1.png" alt="Dárek">
+        <span id="pocet">0</span>
+      </div>
+
+      <h1>Zachraň Vánoce</h1>
+
+      <div id="cas">
+        00:00
+      </div>
+    </header>
+
+
+    <div id="uvod">
+      <div class="obsah">
+        <p>Ježíšek si na rozvoz dárků dětem najal pomocníky, ale stalo se neštěstí. Jednomu pomocníčkovi se rozbily jeho létající sáně. Zbláznily se a létají sem a tam a dárky z nich padají na zem. Doručení dárků je ohroženo.</p>
+
+        <p>Pomocí šipek na klávesnici ovládáš robota, který pomáhá dárky chytat a ukládat do pytle.</p>
+        
+        <p>Kolik dárků se ti takto povede zachránit?</p>
+
+        <button id="start">Start hry</button>
+      </div>
+    </div>
+
+
+    <div id="konec">
+      <div class="obsah">
+        <h2>Děkuji za pomoc</h2>
+        
+        <p>Došel ti čas a já už opravdu musím zachráněné dárky vzít a roznést je dětem pod stromeček. Tvé pomoci si opravdu vážím.</p>
+
+        <p id="vysledek"></p>
+        
+        <p>Tvůj Ježíšek</p>
+
+        <button id="znovu">Hrát znovu</button>
+      </div>
+    </div>
+
+
+    <div id="hra">
+      <img id="sane" src="obrazky/sanky.png" alt="Pomocník na saních">
+      <img id="robot" src="obrazky/robot.png" alt="Robot">
+      <canvas id="snezeni"></canvas>
+    </div>
+
+
+    <audio id="hudba" src="zvuky/hudba.mp3" loop preload="auto"></audio>
+    <audio id="zvuk-naraz" src="zvuky/naraz.mp3"  preload="auto"></audio>
+    <audio id="zvuk-sebrano" src="zvuky/sebrano.mp3"  preload="auto"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
